@@ -1,0 +1,63 @@
+{
+    "title": "Preprocessing pipeline for Slavic languages", 
+    "authors": ["Aleksandar Plamenac", "Savo Tomovic"], 
+    "version": "1.0.0", 
+    "configurations": [
+         {
+             "name": "replace-special-chars", 
+             "propertyName": "replaceSpecialChars", 
+             "description": "Replace special chars and map them to regular ones (Y/N)", 
+             "configValueType": "bool"
+         }, 
+         {
+             "name": "remove-cyrilic",
+             "propertyName": "removeCyrilic", 
+             "description": "Remove cyrilic data (Y/N)", 
+             "configValueType": "bool"
+         },
+         {
+             "name": "translate", 
+             "propertyName": "translate", 
+             "description": "Translate to English", 
+             "configValueType": "bool"
+         }, 
+         {
+             "name": "remove-html-entites", 
+             "propertyName": "removeHtmlEntities", 
+             "description": "Remove HTML entities from text", 
+             "configValueType": "bool"
+         }, 
+         {
+             "name": "to-lower", 
+             "propertyName": "toLower", 
+             "description": "Put all lines to lowercase", 
+             "configValueType": "bool"
+         }, 
+         {
+             "name": "remove-punctuation", 
+             "propertyName": "removePunctuation", 
+             "description": "Remove punctuation from lines", 
+             "configValueType": "bool"
+         }, 
+         {
+             "name": "remove-words-shorter-than-3", 
+             "propertyName": "removeWordsShorterThan3", 
+             "description": "Remove words that are shorter than 3 letters", 
+             "configValueType": "bool"
+         }
+    ],
+    "otherConfigurations": [
+        {
+            "name": "deduce-word-root", 
+            "propertyName": "deduceWordRoot", 
+            "description": "Create line that contains only word roots", 
+            "configValueType": "bool"
+        }, 
+        {
+            "name": "filter-by-regex", 
+            "propertyName": "filterByRegex", 
+            "description": "Remove words that match specified regex", 
+            "configValueType": "bool"
+        }
+    ]
+}

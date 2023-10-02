@@ -1,0 +1,37 @@
+{
+    "name": "Preprocessing pipeline for non-English language", 
+    "version": "1.0.0", 
+    "authors": [ "Savo Tomovic", "Aleksandar Plamenac" ], 
+    "configurations": [
+        {
+            "name": "remove-special-chars", 
+            "propertyName": "removeSpecialChars", 
+            "description": "Remove special chars and map them to regular ones (Y/N)", 
+            "options": ["Y", "N"]
+        }, 
+        { 
+            "name": "remove-conjunctions", 
+            "propertyName": "removeConjunctions",
+            "description": "Remove conjunctions (Y/N)", 
+            "options": ["Y", "N"]
+        },
+        {
+            "name": "deduce-word-root",
+            "propertyName": "deduceWordRoot", 
+            "description": "Deduce word root (Y/N)", 
+            "options": ["Y", "N"]
+        },
+        {
+            "name": "remove-cyrilic",
+            "propertyName": "removeCyrilic", 
+            "description": "Remove cyrilic data (Y/N)", 
+            "options": ["Y", "N"]
+        },
+        { 
+            "name": "translate", 
+            "propertyName": "translate",
+            "description": "Decide whether the translation to English should occur (Y/N)", 
+            "options": ["Y", "N"]
+        }
+    ]
+}
